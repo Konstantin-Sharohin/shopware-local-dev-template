@@ -11,8 +11,6 @@
 /config/packages/local.yaml
 /config/packages/local.yml
 
-/custom/*
-
 /build/*
 !/build/artifacts/.gitkeep
 !/build/media/.gitkeep
@@ -64,3 +62,6 @@ chromedriver.log
 ###< phpunit/phpunit ###
 
 /composer.lock
+
+# misc
+.DS_Store

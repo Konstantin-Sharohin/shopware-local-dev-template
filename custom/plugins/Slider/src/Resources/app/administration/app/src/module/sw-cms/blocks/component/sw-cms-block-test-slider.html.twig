@@ -1,0 +1,14 @@
+{% sw_extends "@Storefront/storefront/block/cms-block-product-slider.html.twig" %}
+
+{% block block_product_slider %}
+    {{ parent() }}
+    {% set element = block.slots.getSlot("productSlider") %}
+    {% set columns = 1 %}
+    
+    <div class="col-12" data-cms-element-id="{{ element.id }}">
+        {% block block_product_slider_inner %}
+            {% sw_include "@Storefront/storefront/element/cms-element-" ~ element.type ~ ".html.twig" ignore missing %}
+            test
+        {% endblock %}
+    </div>
+{% endblock %}
