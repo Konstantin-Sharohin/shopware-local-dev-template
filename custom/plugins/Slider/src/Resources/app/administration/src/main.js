@@ -1,4 +1,4 @@
-import "./module/sw-cms/blocks/commerce/test-slider";
+import "./module/sw-cms/blocks/image/test-slider";
 import deDE from "./module/sw-cms/snippet/de-DE.json";
 import enGB from "./module/sw-cms/snippet/en-GB.json";
 

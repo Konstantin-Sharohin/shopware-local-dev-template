@@ -1,12 +1,12 @@
-import "../../component";
-import "../../preview";
+import "./component";
+import "./preview";
 
 Shopware.Service("cmsService").registerCmsBlock({
     name: "test-slider",
-    label: "sw-cms.blocks.commerce.testSlider.label",
-    category: "commerce",
+    label: "A test slider",
+    category: "image",
     component: "sw-cms-block-test-slider",
-    previewComponent: "sw-cms-preview-test-slider",
+    previewComponent: "sw-cms-block-preview-test-slider",
     defaultConfig: {
         marginBottom: "20px",
         marginTop: "20px",
@@ -15,6 +15,6 @@ Shopware.Service("cmsService").registerCmsBlock({
         sizingMode: "boxed",
     },
     slots: {
-        productSlider: "product-slider",
+        imageSlider: "image-slider",
     },
 });

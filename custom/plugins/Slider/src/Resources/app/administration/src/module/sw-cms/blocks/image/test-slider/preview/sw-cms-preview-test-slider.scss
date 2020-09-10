@@ -1,0 +1,11 @@
+.sw-cms-preview-test-slider {
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 10px;
+
+    .sw-cms-preview-test-slider__product-box {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
