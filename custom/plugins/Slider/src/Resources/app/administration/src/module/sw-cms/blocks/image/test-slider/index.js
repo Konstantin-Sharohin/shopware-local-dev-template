@@ -6,7 +6,7 @@ Shopware.Service("cmsService").registerCmsBlock({
     label: "A test slider",
     category: "image",
     component: "sw-cms-block-test-slider",
-    previewComponent: "sw-cms-block-preview-test-slider",
+    previewComponent: "sw-cms-preview-test-slider",
     defaultConfig: {
         marginBottom: "20px",
         marginTop: "20px",

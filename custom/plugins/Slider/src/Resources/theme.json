@@ -2,8 +2,8 @@
     "name": "Slider",
     "author": "Konstantin S.",
     "description": {
-        "en-GB": "Slider description",
-        "de-DE": "Slider Beschreibung"
+        "en-GB": "Slider theme",
+        "de-DE": "Slider Thema"
     },
     "views": ["@Storefront", "@Plugins", "@Slider"],
     "style": [

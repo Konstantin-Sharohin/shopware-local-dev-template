@@ -1,1 +1,1 @@
-.sw-cms-block-test-slider,.sw-cms-preview-test-slider{align-items:center;display:grid;grid-template-columns:1fr;padding:10px}.sw-cms-preview-test-slider .sw-cms-preview-test-slider__product-box{display:grid;grid-template-columns:1fr}
+.sw-cms-block-test-slider{padding:10px}.sw-cms-block-test-slider,.sw-cms-preview-test-slider{align-items:center;display:grid;grid-template-columns:1fr}.sw-cms-preview-test-slider img{margin:0;display:block;max-width:50%;overflow:hidden}
