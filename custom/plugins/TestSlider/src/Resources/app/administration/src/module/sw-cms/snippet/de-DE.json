@@ -1,0 +1,38 @@
+{
+    "sw-cms": {
+        "elements": {
+            "general": {
+                "config": {
+                    "caption": {
+                        "mediaUpload": "Lade ein Bild hoch"
+                    },
+                    "label": {
+                        "verticalAlign": "Vertikal ausrichten",
+                        "verticalAlignTop": "Oben",
+                        "verticalAlignCenter": "Center",
+                        "verticalAlignBottom": "Unten",
+                        "displayMode": "Anzeigemodus",
+                        "displayModeStandard": "Standard",
+                        "displayModeCover": "Decken",
+                        "displayModeStretch": "Strecken",
+                        "displayModeContain": "Enthalten"
+                    },
+                    "tab": {
+                        "content": "Inhalt",
+                        "settings": "Einstellungen"
+                    }
+                }
+            },
+            "testSlider": {
+                "label": "Test Slider"
+            }
+        },
+        "blocks": {
+            "image": {
+                "testSlider": {
+                    "label": "Test Slider"
+                }
+            }
+        }
+    }
+}

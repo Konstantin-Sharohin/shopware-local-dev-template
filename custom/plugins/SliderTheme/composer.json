@@ -1,0 +1,18 @@
+{
+  "name": "swag/theme-skeleton",
+  "description": "Theme skeleton plugin",
+  "type": "shopware-platform-plugin",
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "SliderTheme\\": "src/"
+    }
+  },
+  "extra": {
+    "shopware-plugin-class": "SliderTheme\\SliderTheme",
+    "label": {
+      "de-DE": "Theme SliderTheme plugin",
+      "en-GB": "Theme SliderTheme plugin"
+    }
+  }
+}
