@@ -1,11 +1,11 @@
-import template from "./sw-cms-el-config-test-slider.html.twig";
-import "./sw-cms-el-config-test-slider.scss";
+import template from "./sw-cms-element-config-test-slider.html.twig";
+import "./sw-cms-element-config-test-slider.scss";
 
 const { Component, Mixin } = Shopware;
 const { cloneDeep } = Shopware.Utils.object;
 const Criteria = Shopware.Data.Criteria;
 
-Component.register("sw-cms-el-config-test-slider", {
+Component.register("sw-cms-element-config-test-slider", {
     template,
 
     mixins: [Mixin.getByName("cms-element")],

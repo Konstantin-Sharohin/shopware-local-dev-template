@@ -1,21 +1,21 @@
 @import "~scss/variables";
 
-.sw-cms-el-config-test-slider {
-    .sw-cms-el-config-test-slider__setting-option {
+.sw-cms-element-config-test-slider {
+    .sw-cms-element-config-test-slider__setting-option {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(185px, 1fr));
         gap: 0 32px;
     }
 
-    .sw-cms-el-config-test-slider__setting-display-mode {
+    .sw-cms-element-config-test-slider__setting-display-mode {
         grid-column: 1 / -1;
     }
 
-    .sw-cms-el-config-test-slider__settings-links {
-        .sw-cms-el-config-test-slider__settings-link {
+    .sw-cms-element-config-test-slider__settings-links {
+        .sw-cms-element-config-test-slider__settings-link {
             margin-top: 8px;
 
-            .sw-cms-el-config-test-slider__settings-link-input {
+            .sw-cms-element-config-test-slider__settings-link-input {
                 margin-bottom: 8px;
 
                 .sw-field__addition {
@@ -27,7 +27,7 @@
                 }
             }
 
-            .sw-cms-el-config-test-slider__settings-link-prefix {
+            .sw-cms-element-config-test-slider__settings-link-prefix {
                 height: 36px;
                 width: 44px;
                 border-radius: 2px;

@@ -1,6 +1,6 @@
 @import "~scss/variables";
 
-.sw-cms-el-test-slider {
+.sw-cms-element-test-slider {
     position: relative;
     width: 100%;
     height: 100%;
@@ -11,17 +11,17 @@
         margin: 0 auto;
     }
 
-    .sw-cms-el-test-slider__image-box {
+    .sw-cms-element-test-slider__image-box {
         display: grid;
         position: relative;
 
-        .sw-cms-el-test-slider__image {
+        .sw-cms-element-test-slider__image {
             margin: 0 auto;
             width: 100%;
         }
 
         &.is--cover {
-            .sw-cms-el-test-slider__image {
+            .sw-cms-element-test-slider__image {
                 object-fit: cover;
                 width: 100%;
                 height: 100%;
@@ -34,7 +34,7 @@
         }
     }
 
-    .sw-cms-el-test-slider__navigation {
+    .sw-cms-element-test-slider__navigation {
         &.is--nav-outside {
             justify-content: center;
             background: #fff;
@@ -42,7 +42,7 @@
             padding: 15px;
         }
 
-        .sw-cms-el-test-slider__navigation-button {
+        .sw-cms-element-test-slider__navigation-button {
             cursor: pointer;
             color: $color-gray-400;
 
@@ -51,14 +51,14 @@
             }
         }
 
-        .sw-cms-el-test-slider__navigation-arrows {
-            .sw-cms-el-test-slider__navigation-button {
+        .sw-cms-element-test-slider__navigation-arrows {
+            .sw-cms-element-test-slider__navigation-button {
                 position: absolute;
                 top: 50%;
             }
 
             &.is--nav-inside {
-                .sw-cms-el-test-slider__navigation-button {
+                .sw-cms-element-test-slider__navigation-button {
                     &:first-child {
                         left: 5px;
                     }
@@ -70,7 +70,7 @@
             }
 
             &.is--nav-outside {
-                .sw-cms-el-test-slider__navigation-button {
+                .sw-cms-element-test-slider__navigation-button {
                     &:first-child {
                         left: -25px;
                     }
@@ -82,11 +82,11 @@
             }
         }
 
-        .sw-cms-el-test-slider__navigation-dots {
+        .sw-cms-element-test-slider__navigation-dots {
             position: relative;
 
             &.is--nav-inside {
-                .sw-cms-el-test-slider__navigation-buttons {
+                .sw-cms-element-test-slider__navigation-buttons {
                     position: absolute;
                     bottom: 10px;
                     left: 50%;
@@ -97,18 +97,18 @@
             &.is--nav-outside {
                 padding-bottom: 0;
 
-                .sw-cms-el-test-slider__navigation-buttons {
+                .sw-cms-element-test-slider__navigation-buttons {
                     justify-content: center;
                     padding: 7.5px;
                 }
             }
 
-            .sw-cms-el-test-slider__navigation-buttons {
+            .sw-cms-element-test-slider__navigation-buttons {
                 display: grid;
                 grid-auto-flow: column dense;
                 grid-auto-columns: min-content;
 
-                .sw-cms-el-test-slider__navigation-button {
+                .sw-cms-element-test-slider__navigation-button {
                     width: 15px;
                     height: 15px;
                     background: $color-gray-400;

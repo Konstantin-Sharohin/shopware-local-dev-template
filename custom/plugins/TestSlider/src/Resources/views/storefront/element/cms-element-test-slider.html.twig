@@ -1,6 +1,6 @@
-{% sw_extends "@Storefront/storefront/element/cms-element-image-slider.html.twig" %}
+{# {% sw_extends "@Storefront/storefront/element/cms-element-image-slider.html.twig" %} #}
 
-{# {% block element_test_slider %}
+{% block element_test_slider %}
     {%  set sliderConfig = element.fieldConfig.elements %}
 
     <div class="cms-element-{{ element.type }}{% if sliderConfig.displayMode.value == "standard" and sliderConfig.verticalAlign.value %} has-vertical-alignment{% endif %}">
@@ -91,4 +91,4 @@
             {% endif %}
         {% endblock %}
     </div>
-{% endblock %} #}
+{% endblock %}

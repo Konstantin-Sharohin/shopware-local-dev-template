@@ -1,9 +1,9 @@
-import template from "./sw-cms-el-test-slider.html.twig";
-import "./sw-cms-el-test-slider.scss";
+import template from "./sw-cms-element-test-slider.html.twig";
+import "./sw-cms-element-test-slider.scss";
 
 const { Component, Mixin } = Shopware;
 
-Component.register("sw-cms-el-test-slider", {
+Component.register("sw-cms-element-test-slider", {
     template,
 
     mixins: [Mixin.getByName("cms-element")],

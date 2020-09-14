@@ -6,9 +6,9 @@ Shopware.Service("cmsService").registerCmsElement({
     name: "test-slider",
     label: "sw-cms.elements.testSlider.label",
     category: "image",
-    component: "sw-cms-el-test-slider",
-    configComponent: "sw-cms-el-config-test-slider",
-    previewComponent: "sw-cms-el-preview-test-slider",
+    component: "sw-cms-element-test-slider",
+    configComponent: "sw-cms-element-config-test-slider",
+    previewComponent: "sw-cms-element-preview-test-slider",
     defaultConfig: {
         sliderItems: {
             source: "static",
@@ -35,28 +35,12 @@ Shopware.Service("cmsService").registerCmsElement({
         },
         minHeight: {
             source: "static",
-            value: "300px",
+            value: "440px",
         },
         // verticalAlign: {
         //     source: "static",
         //     value: null,
         // },
-    },
-    slots: {
-        "test-slider": {
-            type: "test-slider",
-            default: {
-                config: {
-                    displayMode: { source: "static", value: "cover" },
-                },
-                data: {
-                    media: {
-                        url:
-                            "/administration/static/img/cms/preview_camera_large.jpg",
-                    },
-                },
-            },
-        },
     },
 
     enrich: function enrich(elem, data) {

@@ -1,8 +1,17 @@
 .sw-cms-block-preview-test-slider {
+    position: relative;
     align-items: center;
     display: flex;
     justify-content: center;
     height: 100%;
+
+    &.default-arrow-head-left {
+        left: 0;
+    }
+
+    &.default-arrow-head-right {
+        right: 0;
+    }
 
     div {
         margin: 0;

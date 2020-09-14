@@ -1,7 +1,7 @@
 {% block sw_cms_element_test_slider_config %}
-    <div class="sw-cms-el-config-test-slider">
+    <div class="sw-cms-element-config-test-slider">
         {% block sw_cms_element_test_slider_config_tabs %}
-            <sw-tabs class="sw-cms-el-config-test-slider__tabs" defaultItem="content">
+            <sw-tabs class="sw-cms-element-config-test-slider__tabs" defaultItem="content">
                 <template slot-scope="{ active }" >
                     {% block sw_cms_element_test_slider_config_tab_content %}
                         <sw-tabs-item :title="$tc('sw-cms.elements.general.config.tab.content')"
@@ -21,7 +21,7 @@
 
                 <template slot="content" slot-scope="{ active }">
                     {% block sw_cms_element_test_slider_config_content %}
-                        <sw-container v-if="active === 'content'" class="sw-cms-el-config-test-slider__tab-content">
+                        <sw-container v-if="active === 'content'" class="sw-cms-element-config-test-slider__tab-content">
                             {% block sw_cms_element_test_slider_config_media_selection %}
                                 <sw-media-list-selection-v2
                                         :entityMediaItems="mediaItems"
@@ -50,17 +50,17 @@
                     {% endblock %}
 
                     {% block sw_cms_element_test_slider_config_settings %}
-                        <sw-container v-if="active === 'settings'" class="sw-cms-el-config-test-slider__tab-settings">
-                            <div class="sw-cms-el-config-test-slider__settings-options">
+                        <sw-container v-if="active === 'settings'" class="sw-cms-element-config-test-slider__tab-settings">
+                            <div class="sw-cms-element-config-test-slider__settings-options">
 
                                 {% block sw_cms_element_image_gallery_config_settings_display_mode %}
-                                    <div class="sw-cms-el-config-test-slider__setting-option">
+                                    <div class="sw-cms-element-config-test-slider__setting-option">
 
                                         {% block sw_cms_element_image_gallery_config_settings_display_mode_select %}
                                             <sw-select-field :label="$tc('sw-cms.elements.general.config.label.displayMode')"
                                                              v-model="element.config.displayMode.value"
                                                              @change="onChangeDisplayMode"
-                                                             class="sw-cms-el-config-test-slider__setting-display-mode">
+                                                             class="sw-cms-element-config-test-slider__setting-display-mode">
                                                 <option value="standard">{{ $tc('sw-cms.elements.general.config.label.displayModeStandard') }}</option>
                                                 <option value="cover">{{ $tc('sw-cms.elements.general.config.label.displayModeCover') }}</option>
                                                 <option value="contain">{{ $tc('sw-cms.elements.general.config.label.displayModeContain') }}</option>
@@ -91,8 +91,8 @@
 
 
                                 {% block sw_cms_element_test_slider_config_settings_navigation %}
-                                    <div class="sw-cms-el-config-test-slider__setting-navigations sw-cms-el-config-test-slider__setting-option">
-                                        <div class="sw-cms-el-config-test-slider__settings-navigation">
+                                    <div class="sw-cms-element-config-test-slider__setting-navigations sw-cms-element-config-test-slider__setting-option">
+                                        <div class="sw-cms-element-config-test-slider__settings-navigation">
 
                                             {% block sw_cms_element_test_slider_config_settings_navigation_arrow_position %}
                                                 <sw-field type="select"
@@ -113,7 +113,7 @@
                                             {% endblock %}
                                         </div>
 
-                                        <div class="sw-cms-el-config-test-slider__settings-navigation">
+                                        <div class="sw-cms-element-config-test-slider__settings-navigation">
 
                                             {% block sw_cms_element_test_slider_config_settings_navigation_dots_position %}
                                                 <sw-field type="select"
@@ -137,20 +137,20 @@
                                 {% endblock %}
 
                                 {% block sw_cms_element_test_slider_config_settings_links %}
-                                    <div class="sw-cms-el-config-test-slider__settings-links sw-cms-el-config-test-slider__setting-option">
-                                        <div class="sw-cms-el-config-test-slider__settings-link"
+                                    <div class="sw-cms-element-config-test-slider__settings-links sw-cms-element-config-test-slider__setting-option">
+                                        <div class="sw-cms-element-config-test-slider__settings-link"
                                              v-for="sliderItem in items">
 
                                             {% block sw_cms_element_test_slider_config_settings_link_url %}
                                                 <sw-field v-model="sliderItem.url"
-                                                          class="sw-cms-el-config-test-slider__settings-link-input"
+                                                          class="sw-cms-element-config-test-slider__settings-link-input"
                                                           :key="sliderItem.mediaId"
                                                           :name="sliderItem.mediaUrl"
                                                           type="text"
                                                           :label="$tc('sw-cms.elements.image.config.label.linkTo')"
                                                           :placeholder="$tc('sw-cms.elements.image.config.placeholder.enterUrl')">
                                                     <template #prefix>
-                                                        <img class="sw-cms-el-config-test-slider__settings-link-prefix"
+                                                        <img class="sw-cms-element-config-test-slider__settings-link-prefix"
                                                              :src="sliderItem.mediaUrl"
                                                              v-if="sliderItem.mediaUrl">
                                                     </template>
@@ -158,7 +158,7 @@
                                             {% endblock %}
 
                                             {% block sw_cms_element_test_slider_config_settings_link_target %}
-                                                <sw-field class="sw-cms-el-config-test-slider__settings-link-tab"
+                                                <sw-field class="sw-cms-element-config-test-slider__settings-link-tab"
                                                           v-model="sliderItem.newTab"
                                                           type="switch"
                                                           :name="sliderItem.mediaId"

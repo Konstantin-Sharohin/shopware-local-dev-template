@@ -1,6 +1,6 @@
-{% sw_extends "@Storefront/storefront/block/cms-block-image-slider.html.twig" %}
+{# {% sw_extends "@Storefront/storefront/block/cms-block-image-slider.html.twig" %} #}
 
-{# {% block block_test_slider %}
+{% block block_test_slider %}
     {% set element = block.slots.getSlot("testSlider") %}
     {% set columns = 1 %}
     
@@ -9,4 +9,4 @@
             {% sw_include "@Storefront/storefront/element/cms-element-" ~ element.type ~ ".html.twig" ignore missing %}
         {% endblock %}
     </div>
-{% endblock %} #}
+{% endblock %}
